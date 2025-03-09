@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zhw.springcloud</groupId>
+    <artifactId>SpringCloud_Furniture</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>zhw-springcloud-project</name>
+    <description>MyFirstSpringCloudProject</description>
+
+    <!--指定聚合管理的微服务模块-->
+    <modules>
+        <module>commodity</module>
+        <module>renren-fast</module>
+    </modules>
+
+
+</project>

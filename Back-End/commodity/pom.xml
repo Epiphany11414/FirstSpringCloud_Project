@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>commodity</artifactId>
+  <packaging>jar</packaging>
+
+  <name>commodity</name>
+  <description>springcloud-project-commodity-module</description>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.8.RELEASE</version>
+    <relativePath/>
+    <!--把relativePath设置为空值
+        让Maven直接去本地或远程仓库里找该parent：spring-boot-starter-parent的pom.xml文件
+        如果设置relativePath，那么就默认找../pom.xml作为parent：spring-boot-starter-parent的pom.xml文件
+        这显然是错误的，因为在当前文件目录中，../pom.xml是该模块另一个父类的pom.xml
+        会出错，而parent：spring-boot-starter-parent的pom.xml文件是在本地仓库里的，需要到那里去找
+        现在maven由于在relativePath的默认路径../pom.xml中找到了一个pom.xml文件，他就不会再去仓库找了
+        -->
+  </parent>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <spring-cloud.version>2020.0.5</spring-cloud.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+  </dependencies>
+
+
+</project>
